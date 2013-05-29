@@ -1,0 +1,4 @@
+== Grape & Rails
+This is a demo project, it's using grape in a Rails Application, to
+supply a schools releated APIs.
+The school model is based on My Colleges Project's school model.
