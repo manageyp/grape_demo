@@ -1,4 +1,8 @@
 GrapeDemo::Application.routes.draw do
+
+  # Grape APIs
+  mount API => '/'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
