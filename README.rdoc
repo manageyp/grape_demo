@@ -1,4 +1,8 @@
 == Grape & Rails
 This is a demo project, it's using grape in a Rails Application, to
 supply a schools releated APIs.
+
+It used ElasticSearch as the search engine.
+This demo support the basic seach and geo location sort.
+
 The school model is based on My Colleges Project's school model.
