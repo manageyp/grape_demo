@@ -31,7 +31,7 @@ class School < ActiveRecord::Base
                   :nick_name, :real_name, :web_site,
                   :found_year, :ifeng_code, :address,
                   :telephone, :sina_code, :latitude,
-                  :longitude, :zipcode
+                  :longitude, :zipcode, :status
 
   ModelName = "学校"
   ColumnNames = {
@@ -50,6 +50,12 @@ class School < ActiveRecord::Base
   }
 
   class << self
+
+    def paginate(page)
+      per_page = 20
+      page = page.to_i <= 0 ? 1 : page.to_i
+      order("id").page(page).per(per_page)
+    end
 
   end
 
