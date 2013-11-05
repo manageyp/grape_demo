@@ -89,6 +89,7 @@ class School < ActiveRecord::Base
   def to_indexed_json
     { id: id,
       name: real_name,
+      nick_name: nick_name,
       location: location,
       city_id: city_id,
     }.to_json
@@ -97,6 +98,7 @@ class School < ActiveRecord::Base
   mapping do
     indexes :id, :type => 'integer', :index => 'not_analyzed'
     indexes :name, :boost =>  100, analyzer: "snowball"
+    indexes :nick_name, :boost =>  50, analyzer: "snowball"
     indexes :location, :type  => 'geo_point'
     indexes :city_id, :type =>  'integer'
   end
