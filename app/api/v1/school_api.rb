@@ -6,7 +6,7 @@ module V1
 
       desc "获取学校列表接口"
       params do
-        optional :page, :type => String, :desc => "School list page number"
+        optional :page, :type => Integer, :desc => "Page number"
       end
 
       get do
