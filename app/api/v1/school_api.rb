@@ -15,6 +15,17 @@ module V1
         render_json content
       end
 
+      desc "获取学校详情接口"
+      params do
+        optional :id, :type => Integer, :desc => "School ID"
+      end
+
+      get '/:id' do
+        authentication
+        content = V1::SchoolService.get_school(params[:id])
+        render_or_cache(content: content)
+      end
+
     end
   end
 end
