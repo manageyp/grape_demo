@@ -4,9 +4,15 @@ gem 'rails', '3.2.13'
 
 gem 'mysql2', '0.3.12b6'
 
+# Grape RESTful API microframework
 gem 'grape', '0.5.0'
 
+# paginage
 gem "kaminari", "~> 0.14.1"
+
+# Ruby client library for Redis.
+gem 'redis', '3.1.0'
+gem 'redis-namespace', '1.5.0'
 
 group :test, :development do
   gem "rspec-rails", '2.14.0'

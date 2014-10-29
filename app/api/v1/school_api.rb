@@ -18,10 +18,12 @@ module V1
       desc "获取学校详情接口"
       params do
         optional :id, :type => Integer, :desc => "School ID"
+        optional :token, :type => Integer, :desc => "User Token"
       end
 
       get '/:id' do
-        authentication
+        validate_token
+        # or parse_token
         content = V1::SchoolService.get_school(params[:id])
         render_or_cache(content: content)
       end

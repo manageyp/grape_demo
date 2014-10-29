@@ -7,6 +7,9 @@ module V1
 
     before(:each) do
       @school = create(:school)
+      RedisToken.stub(:fetch_token) { "token" }
+      RedisToken.stub(:create_token) { "token" }
+      RedisToken.stub(:verify_token) { "token" }
     end
 
     describe "GET api /v1/schools" do
