@@ -1,0 +1,19 @@
+development:
+  website: http://localhost:3000
+  log_path: ./log/
+  xinge_access_id: access_id
+  xinge_secret_key: secret_key
+
+
+test:
+  website: http://localhost:3000
+  log_path: ./log/
+  xinge_access_id: test
+  xinge_secret_key: test
+
+
+production:
+  website: http://localhost:3000
+  log_path: ./log/
+  xinge_access_id: access_id
+  xinge_secret_key: secret_key
