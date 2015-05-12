@@ -1,6 +1,8 @@
 development:
   website: http://localhost:3000
   log_path: ./log/
+  xinge_host: openapi.xg.qq.com
+  xinge_api_url: http://openapi.xg.qq.com
   xinge_access_id: access_id
   xinge_secret_key: secret_key
 
@@ -8,12 +10,16 @@ development:
 test:
   website: http://localhost:3000
   log_path: ./log/
-  xinge_access_id: test
-  xinge_secret_key: test
+  xinge_host: openapi.xg.qq.com
+  xinge_api_url: http://openapi.xg.qq.com
+  xinge_access_id: access_id
+  xinge_secret_key: secret_key
 
 
 production:
   website: http://localhost:3000
   log_path: ./log/
+  xinge_host: openapi.xg.qq.com
+  xinge_api_url: http://openapi.xg.qq.com
   xinge_access_id: access_id
   xinge_secret_key: secret_key
