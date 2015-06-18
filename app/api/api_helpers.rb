@@ -62,4 +62,12 @@ module ApiHelpers
     end
   end
 
+  def parse_real_ip
+    params[:real_ip] = request.env['HTTP_X_REAL_IP']
+  end
+
+  def parse_header_token
+    params[:token] = request.headers['Token'] || request.headers['token']
+  end
+
 end

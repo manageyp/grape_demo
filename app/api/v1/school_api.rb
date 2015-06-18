@@ -10,6 +10,7 @@ module V1
       end
 
       get do
+        parse_real_ip
         authentication
         content = V1::SchoolService.list(params[:page])
         render_json content
