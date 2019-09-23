@@ -5,7 +5,7 @@ gem 'rails', '3.2.13'
 gem 'mysql2', '0.3.12b6'
 
 # Grape RESTful API microframework
-gem 'grape', '0.5.0'
+gem 'grape', '1.1.0'
 
 # paginage
 gem "kaminari", "~> 0.14.1"
